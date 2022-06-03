@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import s from './FeedbackOptions.module.css'
 
 
 export default function FeedbackOptions({ options, onFeedbackLeave }) {
@@ -11,7 +12,7 @@ export default function FeedbackOptions({ options, onFeedbackLeave }) {
                 <button
                     key={index}
                     type="button"
-                    className={button}
+                    className={s.button}
                     onClick={onFeedbackLeave}
                 >
                     {firstCapitalLetter(option)}
