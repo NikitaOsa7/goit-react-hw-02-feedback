@@ -2,7 +2,7 @@ import s from './FeedbackOptions.module.css';
 import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ options, onFeedbackLeave }) {
-  const firstLetterCaps = string =>
+  const firstLetterCapital = string =>
     string[0].toUpperCase() + string.substring(1);
 
   return (
@@ -14,7 +14,7 @@ export default function FeedbackOptions({ options, onFeedbackLeave }) {
           className={s.button}
           onClick={onFeedbackLeave}
         >
-          {firstLetterCaps(option)}
+          {firstLetterCapital(option)}
         </button>
       ))}
     </>
@@ -23,5 +23,5 @@ export default function FeedbackOptions({ options, onFeedbackLeave }) {
 
 FeedbackOptions.propTypes = {
   buttons: PropTypes.arrayOf(PropTypes.string.isRequired),
-  onLeaveFeedback: PropTypes.func.isRequired,
+  onFeedbackLeave: PropTypes.func.isRequired,
 };
