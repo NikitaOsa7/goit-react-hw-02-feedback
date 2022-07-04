@@ -7,19 +7,20 @@ export default function Statistics({
     total,
     positivePercentage,
 }) {
+ 
     return (
         <>
             {
                 <ul>
-                    <li>Good:{good}</li>
-                    <li>Natural:{neutral}</li>
-                    <li>Bad:{bad}</li>
-                    <li>Total:{total}</li>
-                    <li>Positive Feedback{positivePercentage}%</li>
+                    <li>Good: {good}</li>
+                    <li>Neutral: {neutral}</li>
+                    <li>Bad: {bad}</li>
+                    <li>Total: {total}</li>
+                    <li>Positive Percentage: {positivePercentage}%</li>
                 </ul>
-            }
+        }
         </>
-    );
+    )
 }
 
 Statistics.propTypes = {

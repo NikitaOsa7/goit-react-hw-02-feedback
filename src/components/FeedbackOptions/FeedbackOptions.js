@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 export default function FeedbackOptions({ options, onFeedbackLeave }) {
   const firstLetterCapital = string =>
     string[0].toUpperCase() + string.substring(1);
-
+  
   return (
     <>
-      {options.map((option, index) => (
+      {options.map(( option, index ) => (
         <button
           key={index}
           type="button"
@@ -18,7 +18,7 @@ export default function FeedbackOptions({ options, onFeedbackLeave }) {
         </button>
       ))}
     </>
-  );
+  )
 }
 
 FeedbackOptions.propTypes = {
